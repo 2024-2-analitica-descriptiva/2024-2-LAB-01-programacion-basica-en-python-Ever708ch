@@ -11,7 +11,7 @@ def pregunta_01(x):
     x = [int(i[1]) for i in x]
     x = sum(x)
     return x
-resultado = pregunta_01(x)
+
 
 
 """
