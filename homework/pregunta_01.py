@@ -12,7 +12,7 @@ def pregunta_01(x):
     x = sum(x)
     return x
 resultado = pregunta_01(x)
-print(resultado)
+
 
 """
     Retorne la suma de la segunda columna.
