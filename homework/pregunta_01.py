@@ -5,7 +5,7 @@ solo puede utilizar las funciones y librerias basicas de python. No puede
 utilizar pandas, numpy o scipy.
 """
 
-x = open(r"D:\ever\PhD\descriptiva\2024-2-LAB-01-programacion-basica-en-python-Ever708ch\files\input\data.csv").readlines()
+x = open('data.csv', 'r').readlines()
 def pregunta_01(x):
     x = [i.split("\t") for i in x]
     x = [int(i[1]) for i in x]
