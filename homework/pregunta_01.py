@@ -5,8 +5,9 @@ solo puede utilizar las funciones y librerias basicas de python. No puede
 utilizar pandas, numpy o scipy.
 """
 
-x = open('data.csv', 'r').readlines()
-def pregunta_01(x):
+
+def pregunta_01():
+    x = open('files\input\data.csv').readlines()
     x = [i.split("\t") for i in x]
     x = [int(i[1]) for i in x]
     x = sum(x)
