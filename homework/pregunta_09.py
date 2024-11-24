@@ -8,7 +8,7 @@ utilizar pandas, numpy o scipy.
 
 def pregunta_09():
     from collections import Counter
-    x = open('files\input\data.csv', "r").readlines()
+    x = open('files/input/data.csv', 'r').readlines()
     x = [i.split()[4].split(",") for i in x]
     group = []
     for row in x:

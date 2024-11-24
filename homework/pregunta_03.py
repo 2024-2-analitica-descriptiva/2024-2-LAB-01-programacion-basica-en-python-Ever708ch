@@ -7,7 +7,7 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_03():
-    x = open('files\input\data.csv', "r").readlines()
+    x = open('files/input/data.csv', 'r').readlines()
     x = [i[0:3] for i in x]
     x = [i.split() for i in x]
     acumulador = {}
