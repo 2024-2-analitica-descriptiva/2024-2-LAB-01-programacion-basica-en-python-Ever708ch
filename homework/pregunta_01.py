@@ -11,6 +11,7 @@ def pregunta_01():
     x = [i.split("\t") for i in x]
     x = [int(i[1]) for i in x]
     x = sum(x)
+    
     return x
 
 
