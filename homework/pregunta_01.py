@@ -7,7 +7,7 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_01():
-    x = open(r'files\input\data.csv').readlines()
+    x = open('files/input/data.csv', 'r').readlines()
     x = [i.split("\t") for i in x]
     x = [int(i[1]) for i in x]
     x = sum(x)
