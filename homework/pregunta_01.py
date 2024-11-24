@@ -13,7 +13,7 @@ def pregunta_01():
     x = sum(x)
 
     return x
-
+print(pregunta_01)
 
 
 """
