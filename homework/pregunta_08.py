@@ -7,7 +7,7 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_08():
-    x = open('files\input\data.csv').readlines()
+    x = open('files\input\data.csv', "r").readlines()
     x = [i[0:3].split("\t") for i in x]
 
     group = {}

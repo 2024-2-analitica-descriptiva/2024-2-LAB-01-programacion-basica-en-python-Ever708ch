@@ -7,7 +7,7 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_12():
-    x = open('files\input\data.csv').readlines()
+    x = open('files\input\data.csv', "r").readlines()
     x = [line.strip().split('\t') for line in x]
     x1 = [i[0] for i in x]
     x5 = [i[4].split(',') for i in x]
