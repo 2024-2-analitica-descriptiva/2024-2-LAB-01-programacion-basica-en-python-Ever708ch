@@ -7,6 +7,21 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_07():
+    x = open('files\input\data.csv').readlines()
+    x = [i[0:3].split("\t") for i in x]
+
+    group = {}
+
+    for letter, number in x:
+        number = int(number)  
+        if number not in group:
+            group[number] = []  
+        group[number].append(letter)  
+    
+    x = group
+    x = sorted([(int(numero), letters) for numero, letters in group.items()])
+
+    return x
     """
     Retorne una lista de tuplas que asocien las columnas 0 y 1. Cada tupla
     contiene un valor posible de la columna 2 y una lista con todas las letras

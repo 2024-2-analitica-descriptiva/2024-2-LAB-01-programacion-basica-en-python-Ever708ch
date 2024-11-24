@@ -7,6 +7,18 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_09():
+    from collections import Counter
+    x = open('files\input\data.csv').readlines()
+    x = [i.split()[4].split(",") for i in x]
+    group = []
+    for row in x:
+        for item in row:
+            key, value = item.split(":")
+            value = int(value)
+            group.append(key)
+    letters = dict(sorted(list(Counter(group).items())))
+
+    return letters
     """
     Retorne un diccionario que contenga la cantidad de registros en que
     aparece cada clave de la columna 5.

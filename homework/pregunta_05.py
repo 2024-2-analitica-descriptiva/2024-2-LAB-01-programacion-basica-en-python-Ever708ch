@@ -7,6 +7,18 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_05():
+    x = open('files\input\data.csv').readlines()
+    group = {}
+    x = [i[0:3].split("\t") for i in x]
+    for key, value in x:
+        value = int(value)
+        if key in group:
+            group[key].append(value)
+        else:
+            group[key] = [value]
+    x = [(key, max(value), min(value)) for key, value in group.items()]
+    x.sort()
+    return x
     """
     Retorne una lista de tuplas con el valor maximo y minimo de la columna 2
     por cada letra de la columa 1.
